@@ -27,4 +27,12 @@
     content: "\e60d";
   }
   
-  
+
+  #body-wrap #page-header {
+    background-color : rgba(1, 1, 1, 0)
+  }
+
+  #body-wrap #page-header:not(.not-top-img):before {
+    background-color : rgba(1, 1, 1, 0)
+
+  }
