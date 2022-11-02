@@ -9,7 +9,7 @@
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 19px;
+  font-size: 24px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,11 +34,48 @@
 .icon-leetcode:before {
   content: "\e60d";
 }
+/*icon字体*/
 
+
+/*取消top蓝色覆盖层*/
 #body-wrap #page-header {
-  background-color : rgba(1, 1, 1, 0)
+  background-color : rgba(0, 0, 0, 0)
 }
 
 #body-wrap #page-header:not(.not-top-img):before {
-  background-color : rgba(1, 1, 1, 0)
+  background-color : rgba(0, 0, 0, 0)
 }
+/*取消top蓝色覆盖层*/
+
+
+/*背板透明度*/
+#aside-content .card-widget,
+#aside-content .categoryBar,
+#recent-posts .recent-post-item,
+#post,
+#page
+{
+  background-color : rgba(255, 2255, 255, 0.8)
+}
+
+/*滚动条*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 2em;
+  /* background-color: rgba(73, 177, 245, .2); */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255 255 255 / .3);
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+  border-radius: 2em
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent
+}
+/*滚动条*/
