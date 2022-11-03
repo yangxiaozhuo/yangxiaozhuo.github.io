@@ -38,14 +38,39 @@
 
 
 /*取消top蓝色覆盖层*/
-#body-wrap #page-header {
+/* #body-wrap #page-header {
   background-color : rgba(0, 0, 0, 0)
 }
 
 #body-wrap #page-header:not(.not-top-img):before {
   background-color : rgba(0, 0, 0, 0)
-}
+} */
 /*取消top蓝色覆盖层*/
+
+
+/* 页脚与头图透明 */
+#footer {
+  background: transparent !important;
+}
+#page-header {
+  background: transparent !important;
+}
+
+/* 白天模式遮罩透明 */
+#footer::before {
+  background: transparent !important;
+}
+#page-header::before {
+  background: transparent !important;
+}
+
+/* 夜间模式遮罩透明 */
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
+}
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
+}
 
 
 /*背板透明度*/
@@ -56,8 +81,18 @@
 #page,
 #archive
 {
-  background-color : rgba(255, 2255, 255, 0.8)
+  background-color : rgba(255, 255, 255, 0.8) !important
 }
+
+[data-theme="dark"] #aside-content .categoryBar,
+[data-theme="dark"] #recent-posts .recent-post-item,
+[data-theme="dark"] #post,
+[data-theme="dark"] #page,
+[data-theme="dark"] #archive
+{
+  background-color : rgba(0, 0, 0, 0.8) !important
+}
+
 
 /*滚动条*/
 ::-webkit-scrollbar {
