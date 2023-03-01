@@ -133,3 +133,9 @@
   left: 0;
   top: 0;
 }
+.code .line .language-bash , 
+.code .line .prompt_{
+  color: #969896 !important;
+}
+/*shell注释变灰*/
+/* 969896 */
